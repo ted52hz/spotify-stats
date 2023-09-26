@@ -30,38 +30,16 @@ def get_token():
 def get_auth_header(token):
     return {"Authorization": "Bearer " + token}
 
-def get_an_artist_albums(token):
-    #https://developer.spotify.com/documentation/web-api/reference/get-an-artists-albums
-    url = f"https://api.spotify.com/v1/artists/{ARTIST_ID}/albums?include_groups=album&market=us&limit=49"
-    headers = get_auth_header(token)
-    result = get(url, headers=headers)
-    json_result = json.loads(result.content)
-    album_data = []
-    for item in json_result["items"]:
-        album_entry = {
-            "album_id": item["id"],
-            "album_name": item["name"],
-            "release_date": item["release_date"],
-        }
-        album_data.append(album_entry)
-    
-    csv_file = open("album_spotify.csv", "w", newline="")
-    csv_writer = csv.writer(csv_file)
-    csv_writer.writerow(["album_id", "album_name","release_date"])
-    for dictionary in album_data:
-        csv_writer.writerow(dictionary.values())
-    csv_file.close()
-
 def get_album_ids(filename):
     album_ids = []
     with open(filename, "r") as csv_file:
         reader = csv.reader(csv_file)
         for row in reader:
-            album_id = row[0]
+            album_id = row[1]
             album_ids.append(album_id)
     return album_ids[1:]
   
-def get_an_albums_tracks(token, albums_id_list):
+def get_albums_tracks(token, albums_id_list):
     album_tracks = []
 
     for album_id in albums_id_list:
@@ -80,7 +58,7 @@ def get_an_albums_tracks(token, albums_id_list):
             }
             album_tracks.append(track_entry)
 
-    csv_file = open("album_track_spotify.csv", "w", newline="", encoding="utf-8")
+    csv_file = open("spotify_tracks_from_albums.csv", "w", newline="", encoding="utf-8")
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["album_id", "track_id","track_name"])
     for dictionary in album_tracks:
@@ -109,7 +87,7 @@ def get_track_popularity(token, track_id_list):
         }
         track_popularity.append(track_entry)
 
-    csv_file = open("track_spotify_popularity.csv", "w", newline="", encoding="utf-8")
+    csv_file = open("spotify_tracks_popularity.csv", "w", newline="", encoding="utf-8")
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["track_id", "popularity"])
     for dictionary in track_popularity:
@@ -135,7 +113,7 @@ def get_track_audio_features(token, track_id_list):
         }
         audio_features.append(track_entry)
 
-    csv_file = open("track_spotify_audio_features.csv", "w", newline="", encoding="utf-8")
+    csv_file = open("spotify_tracks_audio_features.csv", "w", newline="", encoding="utf-8")
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["track_id", "acousticness","danceability","energy","instrumentalness","loudness","tempo","valence"])
     for dictionary in audio_features:
@@ -143,9 +121,9 @@ def get_track_audio_features(token, track_id_list):
     csv_file.close()   
 
 token = get_token()
-get_an_artist_albums(token)
-album_id = get_album_ids("album_spotify.csv")
-get_an_albums_tracks(token,album_id)
-track_id = get_track_ids("album_track_spotify.csv")
+#get_an_artist_albums(token)
+#album_id = get_album_ids("kworb_album.csv")
+#get_albums_tracks(token,album_id)
+track_id = get_track_ids("kworb_track.csv")
 get_track_popularity(token,track_id)
 get_track_audio_features(token,track_id)
