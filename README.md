@@ -1,4 +1,4 @@
-## Taylor Swift's discography dashboard (Oct 2023 - Present)
+## Taylor Swift Spotify Chart (Oct 2023 - Present)
 ![TABLEAU](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white) ![PYTHON](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 
 ## Extracting Data
