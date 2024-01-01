@@ -3,7 +3,7 @@
 
 [Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/Book1_16957147109620/Streams?publish=yes)
 
-### REFERENCE
+### REFERENCES
 - [1] [Taylor Swift's albums discography](https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography)
 - [2] [Kworb.net (Music-related data)](https://kworb.net/)
 - [3] [Spotify Web API](https://developer.spotify.com/documentation/web-api)
