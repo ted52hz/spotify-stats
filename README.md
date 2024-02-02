@@ -1,9 +1,24 @@
-## Taylor Swift's Spotify Stream Tracker
-![TABLEAU](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white) ![PYTHON](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+## Taylor Swift Spotify Stream Trend Dashboard
+> In addition to providing insights into Taylor Swift's Spotify streaming trends, this project leverages the generated dashboard as a powerful tool for informing and enriching social media blog posts. With the rise of data-driven content marketing strategies, the dashboard serves as a visual aid to accompany engaging narratives and analysis shared on various social media platforms.
+## Overview
+> With the increasing popularity of data-driven decision-making in the music industry, understanding streaming trends is crucial for artists and their teams. This project focuses on Taylor Swift's Spotify streaming trends, providing insights into her song popularity and audience engagement over time.
+## Features
+- **Web Scraping**: Data is crawled from a specified website to gather information about Taylor Swift's song daily stream counts.<br>
+- **Spotify API Integration**: The project leverages the Spotify API to retrieve information for Taylor Swift's songs (Album Cover, Track Cover, Track-in-Album).<br>
+- **Dashboard Visualization**: Displays the daily stream trend of Taylor Swift's songs in an interactive and informative dashboard.
+## Project Structure
+```
+.....
+README.md: Documentation describing the project.
+```
 
-### [**Tableau Public**](https://public.tableau.com/app/profile/tedhwang007/viz/Book1_16957147109620/Streams?publish=yes)
+## Getting Started
 
-### Sources
-> 1. [Taylor Swift's albums discography](https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography)
-> 2. [Kworb.net (Music-related data)](https://kworb.net/)
-> 3. [Spotify Web API](https://developer.spotify.com/documentation/web-api)
+## Dependencies
+
+### Acknowledgments
+
+> The following resources were instrumental in the development of this project
+- [Taylor Swift's albums discography](https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography)
+- [Kworb.net](https://kworb.net/) for providing song stream counts.
+- [Spotify Web API](https://developer.spotify.com/documentation/web-api) for accessing to Spotify's data.
