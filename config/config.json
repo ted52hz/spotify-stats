@@ -1,0 +1,8 @@
+{
+    "artist_id": "06HL4z0CvFAxyc27GXpf02",
+    "endpoints": {
+        "kworb.net": "https://kworb.net/spotify/artist/{artist_id}_songs.html",
+        "search_tracks": "https://api.spotify.com/v1/tracks/{query}",
+        "search_album": "https://api.spotify.com/v1/albums/{query}"
+    }
+}
