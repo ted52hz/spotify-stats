@@ -14,6 +14,10 @@ README.md: Documentation describing the project.
 
 ## Getting Started
 
+## Tableau
+
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/024a9251-ef08-49de-8b3d-9c4b1099a807)
+
 ## Dependencies
 
 ### Acknowledgments
