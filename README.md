@@ -9,15 +9,15 @@
 ## Project Structure
 ```
 ├── Data Storage
-│   ├── Album_info.csv
-│   ├── Album_info_filtered.csv
-│   └── STREAMS.csv
-│   └── Tracks_info.csv
+│   ├── Album_info.csv (ALBUM_ID, ALBUM_NAME, ALBUM_RELEASE_DATE, ALBUM_COVER)
+│   ├── Album_info_filtered.csv (ALBUM_ID_FILTERED, ALBUM_NAME_FILTERED)
+│   └── STREAMS.csv (TRACK_ID,TOTAL_STREAM,DAILY_STREAM,DATE,PREVIOUS_DAILY_STREAM) # Date = Foldername_date - 1
+│   └── Tracks_info.csv (TRACK_ID, TRACK_NAME, ALBUM_ID, TRACK_RELEASE_DATE, TRACK_COVER)
 ├── DailyStream
 │   ├── STREAMS_2024_01_02.csv
 │   ├── STREAMS_2024_01_03.csv
 │   └── ...
-│   └── STREAMS_2024_02_11.csv
+│   └── STREAMS_2024_02_11.csv # The day scraping data
 ├── config
 │   ├── config.json
 ├── utils.py
@@ -25,7 +25,7 @@
 ├── kworb_scraper.py
 ├── main.py
 ```
-## Tableau
+## Tableau: [Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/Book1_16957147109620/Streams)
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/024a9251-ef08-49de-8b3d-9c4b1099a807)
 
 **Insights:**
@@ -33,9 +33,8 @@
 - **Highlight tracks**: Display the top streamed gainer tracks by Taylor Swift daily. This can help identify her most popular songs and fan favorites.
 - **Stream Distribution by Album**: Visualize the distribution of streams across Taylor Swift's albums. This can highlight which albums are most popular among listeners.
 - **Daily Stream Trends**: Track the daily streams of Taylor Swift's songs to identify any spikes or dips in streaming activity. This could be useful for understanding the impact of new releases, events,...
-- 
-### Acknowledgments
 
+### Acknowledgments
 > The following resources were instrumental in the development of this project
 - [Taylor Swift's albums discography](https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography)
 - [Kworb.net](https://kworb.net/) for providing song stream counts.
