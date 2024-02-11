@@ -88,7 +88,6 @@ class SpotifyAPI:
                             "ALBUM_COVER": json_result.get("images", [{}])[0].get("url")
                         }
                     csv_writer.writerow(info_entry.values())
-
-            print("-[2]- spotify_scraper.py (Write songs to csv file): Done")
+                print("- Extracting {} : Done".format(flag))
         except Exception as e:
             print(f"Error processing data: {e}")
