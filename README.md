@@ -25,6 +25,8 @@
 ├── kworb_scraper.py
 ├── main.py
 ```
+**Note:** I use `Album_info_filtered.csv` to consolidate songs from albums with multiple versions. This is necessary because the track IDs of songs in the initial version of an album may not align with those in subsequent versions. Additionally, the kworb.net site provides track IDs exclusively for the first album version. Consequently, subsequent albums only include new songs.
+
 ## Tableau: [Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/Book1_16957147109620/Streams)
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/024a9251-ef08-49de-8b3d-9c4b1099a807)
 
