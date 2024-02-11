@@ -38,6 +38,6 @@
 
 ### Acknowledgments
 > The following resources were instrumental in the development of this project
-- [Taylor Swift's albums discography](https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography)
+- [Taylor Swift's albums discography](https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography) (Studio albums and Re-recordings albums)
 - [Kworb.net](https://kworb.net/) for providing song stream counts.
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api) for accessing to Spotify's data.
