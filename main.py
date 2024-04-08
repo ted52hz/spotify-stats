@@ -17,13 +17,13 @@ TRACKS_API_ENDPOINT = CONFIG_DATA['endpoints']['search_tracks']
 ALBUM_API_ENDPOINT = CONFIG_DATA['endpoints']['search_album']
 SAPI = SpotifyAPI(client_id, client_secret)
 # STREAMS_yyyy_mm_dd.csv
-DAILY_STREAM_FILENAME = f'./DailyStream/STREAMS_{
+DAILY_STREAM_FILENAME = f'DailyStream/STREAMS_{
     get_datetime_today()}.csv'
-TRACKS_INFO_FILENAME = './Data Storage/Tracks_info.csv'
-ALBUM_INFO_FILENAME = "./Data Storage/Album_info.csv"
-STREAM_FILENAME = "./Data Storage/STREAMS.csv"
-PEAK_FILENAME = "./Data Storage/peaks.csv"
-DAILY_STREAM_FOLDER_PATH = './DailyStream'
+TRACKS_INFO_FILENAME = 'Data Storage/Tracks_info.csv'
+ALBUM_INFO_FILENAME = "Data Storage/Album_info.csv"
+STREAM_FILENAME = "Data Storage/STREAMS.csv"
+PEAK_FILENAME = "Data Storage/peaks.csv"
+DAILY_STREAM_FOLDER_PATH = 'DailyStream'
 
 if __name__ == "__main__":
 
