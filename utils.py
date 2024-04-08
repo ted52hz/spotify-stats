@@ -37,7 +37,7 @@ def process_csv(file):
     df = pd.read_csv(file)
     date_str = os.path.splitext(os.path.basename(file))[0].split('_')[1:]
     date = datetime.strptime('_'.join(date_str), '%Y_%m_%d')
-    df['DATE'] = (date - timedelta(days=1)).strftime('%Y-%m-%d')
+    df['DATE'] = (date - timedelta(days=2)).strftime('%Y-%m-%d')
     return df
 
 
