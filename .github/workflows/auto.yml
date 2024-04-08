@@ -1,0 +1,43 @@
+name: Scrapping
+
+on:
+
+  push:
+    branches:
+      - master
+      
+  schedule:
+  - cron: "00 4 * * *"
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DEBUG 
+        run: echo "::debug::Ref = ${{github.ref}}"
+      - uses: actions/checkout@v3      
+        with:
+         persist-credentials: false
+         fetch-depth: 0
+
+      - name: Modify last update
+        run: |
+          d=`date '+%Y-%m-%dT%H:%M:%SZ'`
+          echo $d > LAST_UPDATED
+          pip install -r requirements.txt
+          python main.py
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "khoaht.uit@gmail.com"
+          git config --local user.name "khoaht312"
+          git add -A
+    
+          
+          git commit -m "Done"
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
