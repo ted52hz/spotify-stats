@@ -3,6 +3,8 @@
 
 ## Web Scraping and Extracting Data From API
 
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/627c7e84-0fc0-47ce-a873-7369d2f69829)
+
 
 ## Tableau:  [Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/TaylorSwiftSpotifyDashboard_17125561936560/v1)
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/104dd240-db1b-48dd-b02e-f5623b28af51)
