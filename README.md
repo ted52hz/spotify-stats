@@ -5,6 +5,7 @@
 
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/5c7a914b-3f83-4da9-bd8a-121984d34239)
 
+[Edit Image](https://www.canva.com/design/DAGB_Z2emZo/DVVSmDlkqE5-ExBj3F183Q/edit?utm_content=DAGB_Z2emZo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/627c7e84-0fc0-47ce-a873-7369d2f69829)
 
