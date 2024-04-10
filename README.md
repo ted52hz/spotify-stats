@@ -9,10 +9,6 @@
 ## Tableau:  [Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/TaylorSwiftSpotifyDashboard_17125561936560/v1)
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/104dd240-db1b-48dd-b02e-f5623b28af51)
 
-
-**Insights:**
-
-
 ### Acknowledgments
 > The following resources were instrumental in the development of this project
 - `Taylor Swift's albums discography`- https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography
