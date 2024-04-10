@@ -3,6 +3,9 @@
 
 ## Web Scraping and Extracting Data From API
 
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/5c7a914b-3f83-4da9-bd8a-121984d34239)
+
+
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/627c7e84-0fc0-47ce-a873-7369d2f69829)
 
 
