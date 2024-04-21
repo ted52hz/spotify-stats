@@ -41,15 +41,15 @@ if __name__ == "__main__":
     NEWEST_TRACK_ID_LIST = list(
         set(NEWEST_ID_LIST_TRACK).union(set(NEWEST_ID_LIST_PEAK)))
 
-    ALBUM_ID_LIST = get_unique_values_from_column(
-        TRACKS_INFO_FILENAME, 'ALBUM_ID')
-
     New_song_flag = set(NEWEST_TRACK_ID_LIST)-set(TRACK_ID_LIST)
 
     if New_song_flag:
         SAPI.get_info(TRACKS_API_ENDPOINT, NEWEST_TRACK_ID_LIST,
                       TRACKS_INFO_FILENAME, "tracks")
 
+        ALBUM_ID_LIST = get_unique_values_from_column(
+        TRACKS_INFO_FILENAME, 'ALBUM_ID')
+        
         SAPI.get_info(ALBUM_API_ENDPOINT, ALBUM_ID_LIST,
                       ALBUM_INFO_FILENAME, 'albums')
     else:
