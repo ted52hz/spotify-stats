@@ -44,8 +44,8 @@ if __name__ == "__main__":
     New_song_flag = set(NEWEST_TRACK_ID_LIST)-set(TRACK_ID_LIST)
 
     ALBUM_ID_LIST = get_unique_values_from_column(
-            TRACKS_INFO_FILENAME, 'ALBUM_ID')
-    
+        TRACKS_INFO_FILENAME, 'ALBUM_ID')
+
     if New_song_flag:
         SAPI.get_info(TRACKS_API_ENDPOINT, NEWEST_TRACK_ID_LIST,
                       TRACKS_INFO_FILENAME, "tracks")
