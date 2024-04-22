@@ -26,7 +26,7 @@ def get_datetime_today():
 
 def get_unique_values_from_column(csv_file, column_name):
     unique_values = set()
-    with open(csv_file, 'rb', newline='') as file:
+    with open(csv_file, 'r', newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
             unique_values.add(row[column_name])
