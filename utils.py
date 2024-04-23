@@ -46,4 +46,4 @@ def insert_previous_daily_stream(file):
     df = df.sort_values(by='DATE')
     df['PREVIOUS_DAILY_STREAM'] = df.groupby(
         'TRACK_ID')['DAILY_STREAM'].shift(fill_value=0)
-    return df
+    return df[['TRACK_ID', 'TOTAL_STREAM', 'DAILY_STREAM', 'DATE', 'PREVIOUS_DAILY_STREAM']]
