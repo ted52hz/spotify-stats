@@ -61,5 +61,4 @@ if __name__ == "__main__":
     merged_df = pd.concat(dfs, ignore_index=True)
     merged_df.to_csv(STREAM_FILENAME, index=False)
     insert_pre_stream_df = insert_previous_daily_stream(STREAM_FILENAME)
-    print(insert_pre_stream_df)
     insert_pre_stream_df.to_csv(STREAM_FILENAME, index=False)
