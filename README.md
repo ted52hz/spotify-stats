@@ -1,6 +1,27 @@
 ## Taylor Swift Spotify Stream Trend Dashboard
 > In addition to providing insights into Taylor Swift's Spotify streaming trends, this project leverages the generated dashboard as a tool for informing and enriching social media blog posts. With the rise of data-driven content marketing strategies, the dashboard serves as a visual aid to accompany engaging narratives and analysis shared on various social media platforms.
 
+## Metrics & Charts
+1. **`Total Streams`**: This metric represents the cumulative number of times a song has been streamed on Spotify since its release or since Spotify started tracking it. It gives an overall indication of the song's long-term popularity and reach.
+
+2. **`Daily Streams`**: Daily streams refer to the number of times a song is streamed on Spotify within a single day **(Friday 12:00 AM - Thursday 11:59 PM UTC)**. This metric provides insights into the immediate popularity and trend of a song.
+ 
+3. **`Peak Streams`**: Peak streams indicate the highest number of streams a song has received within a specific timeframe, such as a day, a week, or a month. This metric highlights the peak of a song's popularity and can be useful for identifying key moments when the song gained significant traction, such as being featured on a popular playlist, going viral on social media, or being performed at a major event.
+
+4. **`Daily Top Albums`**,**`Daily Top Songs`**: Spotify's rankings of the most streamed albums and tracks on a daily streams. These charts provide insights into what music is currently trending and most popular among Spotify users. Artists and listeners often pay close attention to these charts to gauge trends and discover new music.
+
+5. **`Spotify Charted Tracks by country`**: The songs that have achieved notable popularity and have been officially recognized by Spotify Global 200 Charts (Which list 200 most streamed tracks over a certain period, such as a day, a week, or a month within a specific country or global). Spotify compiles charts that reflect the most streamed songs in various countries or regions.
+
+## Notes (Based on my experience through working on this project)
+1. **Many songs share the same name on music platforms like Spotify due to the existence of multiple versions or variations of the same song. This can occur for several reasons**:
+- **Different Versions**: Artists often release multiple versions of the same song, such as radio edits, extended mixes, acoustic versions, remixes, or live recordings.
+- **Explicit and Clean Versions**: Some songs/albums have both explicit and clean versions, with differences in lyrical content or language.
+- **Inclusion in Deluxe Albums**: Songs may also appear multiple times under the same title when they are included in deluxe editions of albums. Deluxe versions often feature additional tracks, remixes, or bonus content alongside the standard album tracks.
+> **Solution**: I create manually a file called `Album_info_filtered` to detect main albums and compile tracks for Daily top albums chart.
+
+2. **Time to extract data**: The Spotify Daily charts are typically released before 12 PM EST (4 PM UTC) on the day following the chart period, while updates on kworb.net may occur after this time.
+
+3. **Unfiltered streams**: This project's stream data demonstrates a variance of approximately 2% from Spotify's official chart, attributable to KWORB sourcing its data directly from Spotify Desktop.
 ## Web Scraping and Extracting Data From API
 
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/5c7a914b-3f83-4da9-bd8a-121984d34239)
@@ -9,13 +30,14 @@
 
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/627c7e84-0fc0-47ce-a873-7369d2f69829)
 
-## Tableau:  [Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/TaylorSwiftSpotifyDashboard_17125561936560/v1)
-![image](https://github.com/khoaht312/spotify-stats/assets/69152064/104dd240-db1b-48dd-b02e-f5623b28af51)
+## Tableau:  [Link to Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/TaylorSwiftSpotifyDashboard_17125561936560/v1)
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/1ed8756e-56a0-4d4f-b64b-21a477f2e8d8)
 
-### Acknowledgments
+### Acknowledgments / Docs
 > The following resources were instrumental in the development of this project
 - `Taylor Swift's albums discography`- https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography
 - `Kworb.net`- https://kworb.net 
 - `Spotify Web API`- https://developer.spotify.com/documentation/web-api
 - `Spotify Charts` - https://charts.spotify.com/charts/overview/global
 - `Spotify’s Social Media Strategy: Streaming Brilliant Content Globally` - https://keyhole.co/blog/spotify-social-media-strategy/
+- `Audience stats - Charts` - https://support.spotify.com/us/artists/article/charts/
