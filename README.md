@@ -1,4 +1,4 @@
-## Taylor Swift Spotify Stream Trend Dashboard
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/740e81bf-4ee4-4de2-aa09-99c6c23fbbb2)## Taylor Swift Spotify Stream Trend Dashboard
 > In addition to providing insights into Taylor Swift's Spotify streaming trends, this project leverages the generated dashboard as a tool for informing and enriching social media blog posts. With the rise of data-driven content marketing strategies, the dashboard serves as a visual aid to accompany engaging narratives and analysis shared on various social media platforms.
 
 ## Metrics & Charts
@@ -22,6 +22,11 @@
 2. **Time to extract data**: The Spotify Daily charts are typically released before 12 PM EST (4 PM UTC) on the day following the chart period, while updates on kworb.net may occur after this time.
 
 3. **Unfiltered streams**: This project's stream data demonstrates a variance of approximately 2% from Spotify's official chart, attributable to KWORB sourcing its data directly from Spotify Desktop.
+
+4. **No stream data in the first two day of new tracks**: Kworb offers comprehensive data for songs that have been out for at least two days. For instance, the track mentioned displays total streams for its initial two days, with daily streams unavailable. To gauge the first day's streams, I rely on [Peak Data](https://kworb.net/spotify/artist/06HL4z0CvFAxyc27GXpf02.html) and then calculate the second day's streams by subtracting. This method proves valuable primarily for renowned artists featured on the Spotify Daily Chart Global. 
+
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/16ffc4eb-166b-49aa-a46d-bf9e01cfacc2)
+ 
 ## Web Scraping and Extracting Data From API
 
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/5c7a914b-3f83-4da9-bd8a-121984d34239)
