@@ -36,6 +36,9 @@
 ![image](https://github.com/khoaht312/spotify-stats/assets/69152064/627c7e84-0fc0-47ce-a873-7369d2f69829)
 
 ## Tableau:  [Link to Tableau Public](https://public.tableau.com/app/profile/tedhwang007/viz/TaylorSwiftSpotifyDashboard_17125561936560/v1)
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/5d4e64bb-8621-4792-870e-44fe10b43d59)
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/6cc13112-3d48-4bca-bc65-6cccd76f11be)
+![image](https://github.com/khoaht312/spotify-stats/assets/69152064/31348bd6-50aa-4677-90cc-8218a061345d)
 
 
 ### Acknowledgments / Docs
