@@ -26,10 +26,9 @@ DAILY_STREAM_FOLDER_PATH = 'DailyStream'
 
 if __name__ == "__main__":
 
-    # Scrapping Daily Stream
     scrape_spotify_songs(KWORB_ENDPOINT, DAILY_STREAM_FILENAME)
     scrape_tracks_peak(KWORB_PEAK_ENDPOINT, PEAK_FILENAME)
-    # Extracting Tracks, Albums Info
+
     TRACK_ID_LIST = get_unique_values_from_column(STREAM_FILENAME, 'TRACK_ID')
 
     NEWEST_ID_LIST_TRACK = get_unique_values_from_column(
