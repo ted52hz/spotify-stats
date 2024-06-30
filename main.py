@@ -27,8 +27,8 @@ DAILY_STREAM_FOLDER_PATH = 'DailyStream'
 if __name__ == "__main__":
 
     # Scrapping Daily Stream
-    scrape_spotify_songs(KWORB_ENDPOINT, DAILY_STREAM_FILENAME)
-    scrape_tracks_peak(KWORB_PEAK_ENDPOINT, PEAK_FILENAME)
+    # scrape_spotify_songs(KWORB_ENDPOINT, DAILY_STREAM_FILENAME)
+    # scrape_tracks_peak(KWORB_PEAK_ENDPOINT, PEAK_FILENAME)
     # Extracting Tracks, Albums Info
     TRACK_ID_LIST = get_unique_values_from_column(STREAM_FILENAME, 'TRACK_ID')
 
@@ -42,8 +42,8 @@ if __name__ == "__main__":
         set(NEWEST_ID_LIST_TRACK).union(set(NEWEST_ID_LIST_PEAK)))
 
     New_song_flag = set(NEWEST_TRACK_ID_LIST)-set(TRACK_ID_LIST)
-    # print(New_song_flag)
-    if New_song_flag:
+
+    if len(New_song_flag) > 0:
         SAPI.get_info(TRACKS_API_ENDPOINT, NEWEST_TRACK_ID_LIST,
                       TRACKS_INFO_FILENAME, "tracks")
 
